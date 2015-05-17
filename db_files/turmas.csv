@@ -1,0 +1,16 @@
+﻿id_turma,id_curso,descricao
+0,0,Banco de dados
+1,0,Grafos
+2,0,Computação Gráfica
+3,0,Inteligencia A
+4,1,Pintura de Quadros
+5,1,Historia da arte
+6,2,Anatomia
+7,2,Cardiologia
+8,3,Civil
+9,3,Trabalhista
+10,4,Inglês
+11,4,Espanhol
+
+(12 row(s) affected)
+
