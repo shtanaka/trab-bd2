@@ -1,22 +1,24 @@
 package application;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import beans.Tupla;
 
 public class UtilStaticMethods {
 
 	public static int parseComparable(String text) {
-		if (text.contains("[a-zA-Z]+") == false) {
-			return Integer.parseInt(text);
-		} else {
+		if (text.matches("[a-zA-Z]+")) {
 			return Integer.parseInt(alphaToNumber(text));
+		} else {
+			return Integer.parseInt(text);
 		}
 	}
 
 	private static String alphaToNumber(String text) {
-		Map<Character, String> map;
-		String str = "hello world";
-
+		Map<Character, String> map;		 
+		
 		map = new HashMap<>();
 		map.put(' ', "0");
 		map.put('a', "1");
@@ -46,11 +48,22 @@ public class UtilStaticMethods {
 		map.put('y', "25");
 		map.put('z', "26");
 		String val = "";
-		for (char c : str.toCharArray()) {
+		
+		for (char c : text.toCharArray()) {
 			val = val + map.get(c);
 		}
 		return val;
 
+	}
+
+	public static void printTuplas(List<Tupla> list) {
+		for(Tupla t : list) {
+			for(int i = 0; i < t.getNumColunas(); i++) {
+				System.out.print(" " + t.getColunas()[i] + " |");
+			}
+			System.out.println();
+		}
+		
 	}
 
 }

@@ -2,9 +2,15 @@ package beans;
 
 public class Tupla {
 	private String colunas[];
-
+	int numColunas;
+	
+	public int getNumColunas() {
+		return numColunas;
+	}
+	
 	public Tupla(int numColunas) {
 		colunas = new String[numColunas];
+		this.numColunas = numColunas;
 	}
 
 	public String[] getColunas() {
