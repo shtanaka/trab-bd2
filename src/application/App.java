@@ -19,10 +19,3 @@ public class App {
 	}
 
 }
-
-/*
- * for (int i = 0; i < buckets.length; i++) {
- * 
- * if (buckets[i] != null) { List<Tupla> l = buckets[i].getTuplas(); for (Tupla
- * t : l) { System.out.println(t.getColunas()[0]); } System.out.println(); } }
- */
