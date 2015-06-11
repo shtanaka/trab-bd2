@@ -59,7 +59,7 @@ public class UtilStaticMethods {
 	public static void printTuplas(List<Tupla> list) {
 		for(Tupla t : list) {
 			for(int i = 0; i < t.getNumColunas(); i++) {
-				System.out.print(" " + t.getColunas()[i] + " |");
+				System.out.print(" " + t.getColunas()[i] + " \t|");
 			}
 			System.out.println();
 		}
